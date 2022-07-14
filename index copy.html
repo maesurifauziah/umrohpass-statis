@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+        <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body style="font-family: poppins, sans-serif">
+        <!-- <nav>
+            <div class="container mx-auto px-6 py-2 flex justify-between items-center h-24">
+                <a class="font-bold text-2xl lg:text-4xl" href="#">
+                    <img src="asset/images/logo-umrohpass.png" alt="Logo Umrohpass">
+                </a>
+                <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg class="hidden w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </button>
+                  <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                    <li>
+                        <a class="block px-4 text-lg font-bold focus:border-blue-400" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="block px-4 text-lg hover:font-bold hover:text-gray-800 hover:underline-offset-4" href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a class="block px-4 text-lg hover:font-bold hover:text-gray-800 hover:underline-offset-4" href="#">Our Gallery</a>
+                    </li>
+                    <li>
+                        <a class="block px-4 text-lg hover:font-bold hover:text-gray-800 hover:underline-offset-4" href="#">Package</a>
+                    </li>
+                    <li>
+                        <a class="block px-4 text-lg hover:font-bold hover:text-gray-800 hover:underline-offset-4" href="#">Booking Comfirmation</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5">
+            <div class="container flex flex-wrap justify-between items-center mx-auto h24">
+              <a href="#" class="flex items-center">
+                <img src="asset/images/logo-umrohpass.png" class="ml-24" alt="Logo Umrohpass">
+              </a>
+              <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                <svg class="hidden w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                  <li class="ml-14">
+                    <a href="#" class="block py-2 pr-4 text-lg font-bold focus:border-blue-400" aria-current="page">Home</a>
+                  </li>
+                  <li class="ml-14">
+                    <a href="#" class="block py-2 pr-4 text-lg hover:font-bold hover:text-gray-800 hover:underline-offset-8">About Us</a>
+                  </li>
+                  <li class="ml-14">
+                    <a href="#" class="block py-2 pr-4 text-lg hover:font-bold hover:text-gray-800 hover:underline-offset-8">Our Gallery</a>
+                  </li>
+                  <li class="ml-14">
+                    <a href="#" class="block py-2 pr-4 text-lg hover:font-bold hover:text-gray-800 hover:underline-offset-8">Package</a>
+                  </li>
+                  <li class="ml-14">
+                    <a href="#" class="block py-2 pr-4 text-lg hover:font-bold hover:text-gray-800 hover:underline-offset-8">Booking Comfirmation</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+       
+        <div class="h-screen bg-cover bg-center" style="background-image: url('asset/images/background-kabah.jpeg'); width: 1440px;
+        height: 680px;
+        left: -100px;
+        top: -42px;">
+       
+
+            <div class="container pl-24" style="padding-top: 42px; padding-bottom: 80px; padding-right: 814px;">
+                <div class="p-6 bg-white rounded-lg bg-[#16215B]" style="width: 526px;
+                height: 558px;">
+                    <a href="#">
+                        <h5 class="mb-9 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Nikmati Pengalaman Umrah Eksklusif bersama Umroh Pass</h5>
+                    </a>
+                    <p class="mb-40 font-normal text-gray-700 dark:text-gray-400" style="">Travel umrah dengan fasilitas terbaik yang membuat ibadah Anda khusyu dan nyaman.</p>
+                    <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg" style="background: linear-gradient(73.85deg, #C8A251 24.88%, #EED477 196.59%); border-radius: 40px;">
+                        Booking Sekarang!
+                    </a>
+                        
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Mengapa memilih kami? <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></p>
+                </div>
+            </div>
+        </div>
+        <div class="py-20 w-full h-screen bg-cover bg-center">
+       
+
+            <div class="container mx-auto px-6">
+                <div class="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

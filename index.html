@@ -3,55 +3,119 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+        <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="asset/css/style.css" />
     </head>
-    <body style="font-family: ''Poppins'', sans-serif">
-        <nav>
-            <div class="container mx-auto px-6 py-2 flex justify-between items-center h-24">
-                <a class="font-bold text-2xl lg:text-4xl" href="#">
-                    <img src="asset/images/logo-umrohpass.png" alt="Logo Umrohpass">
-                </a>
-                <div class="block lg:hidden">
-                    <button class="flex items-center px-3 py-2 rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                    </button>
-                </div>
-                <div class="hidden lg:block">
-                    <ul class="inline-flex">
-                    <li>
-                        <a class="px-4 text-lg font-bold focus:border-blue-400" href="/">Home</a>
-                    </li>
-                    <li>
-                        <a class="px-4 text-lg hover:text-gray-800" href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a class="px-4 text-lg hover:text-gray-800" href="#">Our Gallery</a>
-                    </li>
-                    <li>
-                        <a class="px-4 text-lg hover:text-gray-800" href="#">Package</a>
-                    </li>
-                    <li>
-                        <a class="px-4 text-lg hover:text-gray-800" href="#">Booking Comfirmation</a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-         <div class="py-20 w-full h-screen bg-cover bg-center" style="background-image: url('asset/images/background-kabah.jpeg')">
+    <body style="font-family: poppins, sans-serif">
 
-          <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-2 text-white">
-              Smart Health Monitoring Wristwatch!
-            </h2>
-            <h3 class="text-2xl mb-8 text-gray-200">
-              Monitor your health vitals smartly anywhere you go.
-            </h3>
-            <button class="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
-              Pre Order
-            </button>
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+              <a href="#" class="flex items-center">
+                <img src="asset/images/logo-umrohpass.png" class="ml-24" alt="Logo Umrohpass">
+              </a>
+              <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                <svg class="hidden w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                  <li class="ml-14">
+                    <a href="#" class="block py-2 pr-4 text-lg font-bold underline focus:underline" aria-current="page">Home</a>
+                  </li>
+                  <li class="ml-14">
+                    <a href="#" class="block py-2 pr-4 text-lg hover:font-bold hover:text-gray-800 hover:underline">About Us</a>
+                  </li>
+                  <li class="ml-14">
+                    <a href="#" class="block py-2 pr-4 text-lg hover:font-bold hover:text-gray-800 hover:underline">Our Gallery</a>
+                  </li>
+                  <li class="ml-14">
+                    <a href="#" class="block py-2 pr-4 text-lg hover:font-bold hover:text-gray-800 hover:underline">Package</a>
+                  </li>
+                  <li class="ml-14">
+                    <a href="#" class="block py-2 pr-4 text-lg hover:font-bold hover:text-gray-800 hover:underline">Booking Comfirmation</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+       
+        <div class="h-[680px] bg-cover bg-center w-screen bg-[url('asset/images/background-kabah.jpeg')]">
+            <div class="container flex flex-wrap justify-between items-center mx-auto pt-11">
+              <div class="p-6 max-w-lg sm:max-w-[526px] sm:h-[558px] bg-white rounded-lg bg-[#16215B]">
+                  <a href="#">
+                      <h5 class="mb-10 pl-7.5 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Nikmati Pengalaman Umrah Eksklusif bersama Umroh Pass</h5>
+                  </a>
+                  <p class="mb-40 font-normal text-gray-700 dark:text-gray-400" style="">Travel umrah dengan fasilitas terbaik yang membuat ibadah Anda khusyu dan nyaman.</p>
+                  <a href="#" class="mb-3 inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg" style="background: linear-gradient(73.85deg, #C8A251 24.88%, #EED477 196.59%); border-radius: 40px;">
+                    Booking Sekarang!
+                </a>
+                <br>
+                    <a href="#" class="mb-3 font-normal inline-flex items-center text-gray-700 dark:text-gray-400">Mengapa memilih kami? <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+              </div>
           </div>
+        </div>
+
+        <div class="py-16 w-full h-[630px] bg-cover bg-center">
+            <div class="container mx-auto">
+                <h4 class="text-2xl font-bold tracking-tight text-gray-900 text-center pb-8 sm:pb-24">About Us</h4>
+                <p class="text-justify box-content h-auto w-[85%] sm:w-[690px] font-normal inline-flex items-center reguler text-2xl align-top px-6 sm:px-3">Umroh Pass adalah travel umrah terpercaya yang menyediakan pelayanan ekslusif dengan fasilitas bintang 5. Fleksibel dalam mengatur perjalanan tanpa harus ke kantor. Membuat umrah lebih mudah agar menjadi pengalaman ibadah terbaik Anda.</p>
+                <img class="pl-28 pt-8 sm:pt-0 inline-flex items-center w-[433px]" src="asset/images/mekah.png">
+            </div>
+        </div>
+
+        <div class="py-16 w-full h-[630px] bg-cover bg-center bg-[url('asset/images/testimoni.png')]">
+            <div class="container mx-auto">
+                <div class="text-justify box-content h-auto w-[85%] sm:w-[385px] font-normal inline-flex items-center reguler text-2xl align-top px-6 sm:px-3">
+                    <p>
+                        <b>Lorem Ipsum Dolor Sit Amet</b><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ligula nulla pretium blandit. Donec aliquam enim donec sollicitudin diam sed risus..
+                    </p> 
+                </div>
+                
+                <div class="inline-flex items-center">
+                    <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md mr-5 ml-24">
+                        <div class="flex flex-col items-center pb-10">
+                            <img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="asset/images/client1.png" alt="Bonnie image">
+                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+                            <div class="flex mt-4 space-x-3 lg:mt-6">
+                                <a href="#" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
+                                <a href="#" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">Message</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md mr-5 ">
+                        <div class="flex flex-col items-center pb-10">
+                            <img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="asset/images/client1.png" alt="Bonnie image">
+                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+                            <div class="flex mt-4 space-x-3 lg:mt-6">
+                                <a href="#" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
+                                <a href="#" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">Message</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md mr-5 ">
+                        <div class="flex flex-col items-center pb-10">
+                            <img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="asset/images/client1.png" alt="Bonnie image">
+                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+                            <div class="flex mt-4 space-x-3 lg:mt-6">
+                                <a href="#" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
+                                <a href="#" class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+        
     </body>
 </html>
